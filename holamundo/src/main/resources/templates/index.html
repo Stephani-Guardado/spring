@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>HOLA MUNDO JAVA	</h1>
+<p th:text="${saludo}"></p>
+
+<table class="table table-dark">
+<thead>
+<th>Nombre</th>
+<th>Apellido</th>
+<th>Email</th>
+<th>Telefono</th>
+</thead>
+<tbody>
+<tr th:each="person: ${person}">
+<td th:text="${person.Nombre}"></span>
+<td th:text="${person.Apellido}"></span>
+<td th:text="${person.Email}"></span>
+<td th:text="${person.Telefono}"></span>
+</tr>
+
+</tbody>
+</table>
+
+</body>
+</html>
